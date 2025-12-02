@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Coins, Wallet, LogOut, RefreshCw, Trophy, XCircle, Sparkles } from 'lucide-react'
+import { Coins, Wallet, LogOut, RefreshCw, Trophy, XCircle, Sparkles, Github } from 'lucide-react'
 import Image from 'next/image'
 import solLogo from './sol.png'
 
@@ -244,9 +244,20 @@ export default function Home() {
         </div>
 
         <div className="text-center mb-8">
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-2">
-            🪙 Solana Coin Flip
-          </h1>
+          <div className="flex items-center justify-center gap-4 mb-2">
+            <h1 className="text-5xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+              🪙 Solana Coin Flip
+            </h1>
+            <a
+              href="https://github.com/thirdweb-example/solana-coin-flip"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-12 h-12 rounded-full bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/50 hover:border-orange-500 transition-all duration-200 hover:scale-110 group"
+              aria-label="View on GitHub"
+            >
+              <Github className="w-6 h-6 text-orange-500 group-hover:text-orange-400" />
+            </a>
+          </div>
           <p className="text-orange-400/80">Provably fair gaming on Solana Devnet</p>
         </div>
 
